@@ -1,32 +1,86 @@
 # 💰 TrackMyCash
 
-<<<<<<< HEAD
-A **professional monthly budget tracking** Flutter app with local Hive storage,
-fl_chart analytics, and a beautiful dark-first Material 3 UI.
+![Flutter](https://img.shields.io/badge/Flutter-3.x-blue?logo=flutter)
+![Dart](https://img.shields.io/badge/Dart-3.x-blue?logo=dart)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+A modern **Flutter-based budget tracking application** with local offline storage, beautiful analytics, and a clean Material 3 dark UI.
+
+Track your daily income and expenses, analyze spending habits, and manage your monthly finances — completely offline.
 
 ---
 
-## 🚀 Quick Start
+## 📌 Problem
 
-> ⚠️ **Device Guard Note**: If Dart is blocked by your organization policy,
-> open a **personal (non-managed) PowerShell** window, or use Android Studio's
-> built-in terminal which runs under a different security context.
+Most finance tracking apps:
+- Require an internet connection
+- Store user data on cloud servers
+- Have complicated workflows
+- Lack proper visual analytics
+- Feel overloaded with unnecessary features
 
-### Step 1 — Get dependencies
-```bash
-cd track_my_cash
-flutter pub get
-```
+Traditional spreadsheets are time-consuming and difficult to maintain daily.
 
-### Step 2 — Run on device / emulator
-```bash
-flutter run
-```
+Users need a simple, fast, offline-first finance tracker that respects privacy while helping build financial discipline.
 
-### Step 3 (Optional) — Build APK
-```bash
-flutter build apk --release
-```
+---
+
+## ✅ Solution
+
+**TrackMyCash** provides:
+- 🔒 Offline-first local storage using Hive
+- ⚡ Fast and lightweight performance
+- 📊 Beautiful financial analytics
+- 📅 Daily workflow management
+- 🌙 Dark mode support
+- 📈 Monthly reports and trends
+- 🗑️ Quick swipe-to-delete entries
+- 📱 Modern Material 3 UI
+
+All data stays safely on the user's device.
+
+---
+
+## ✨ Features
+
+- 📱 Animated Splash Screen
+- 📊 Monthly Dashboard with balance hero card
+- ➕ Add Income Entries with source chips
+- ➖ Add Expense Entries with category grid
+- 📅 Daily Summary Tracking with Submit Day button
+- 📈 Monthly Reports with stats grid & insights
+- 📉 Pie / Bar / Line Chart Analytics
+- 🗑️ Swipe to Delete entries
+- 🔒 Offline Local Storage (no internet needed)
+- 🌙 Dark Theme Support
+
+---
+
+## 🖼️ Screenshots
+
+<p align="center">
+  <img width="220" alt="Dashboard Screen" src="https://github.com/user-attachments/assets/051ffe0f-3fe0-4672-b74d-682da952724d" />
+  &nbsp;&nbsp;
+  <img width="220" alt="Add Entry Screen" src="https://github.com/user-attachments/assets/5263bea1-1e02-43ca-8c68-bf0d1a215a71" />
+  &nbsp;&nbsp;
+  <img width="220" alt="Analytics Screen" src="https://github.com/user-attachments/assets/8b5a93f3-23eb-4d72-9a3a-67b107be9c36" />
+  &nbsp;&nbsp;
+  <img width="220" alt="Monthly Report Screen" src="https://github.com/user-attachments/assets/c37a1233-de4f-46c9-a023-9a227850ec48" />
+</p>
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Usage |
+|------------|-------|
+| Flutter | App Framework |
+| Dart | Programming Language |
+| Hive + Hive Flutter | Local NoSQL Database |
+| Provider | State Management |
+| fl_chart | Pie, Bar & Line Charts |
+| intl | Date & Currency Formatting |
+| uuid | Unique Entry ID Generation |
 
 ---
 
@@ -44,7 +98,7 @@ flutter build apk --release
 
 ---
 
-## 🗂️ Project Structure
+## 📁 Project Structure
 
 ```
 lib/
@@ -63,105 +117,6 @@ lib/
 │   │   └── hive_service.dart     # CRUD + monthly filters
 │   └── providers/
 │       └── budget_provider.dart  # ChangeNotifier state + analytics getters
-=======
-![Flutter](https://img.shields.io/badge/Flutter-3.x-blue?logo=flutter)
-![Dart](https://img.shields.io/badge/Dart-3.x-blue?logo=dart)
-![License](https://img.shields.io/badge/License-MIT-yellow.svg)
-
-A modern **Flutter-based budget tracking application** with local offline storage, beautiful analytics, and a clean Material 3 UI.
-
-Track your daily income and expenses, analyze spending habits, and manage your monthly finances completely offline.
-
----
-
-# 📌 Problem
-
-Most finance tracking apps:
-- Require internet connection
-- Store user data on cloud servers
-- Have complicated workflows
-- Lack proper visual analytics
-- Feel overloaded with unnecessary features
-
-Traditional spreadsheets are time-consuming and difficult to maintain daily.
-
-Users need a simple, fast, offline-first finance tracker that respects privacy while helping build financial discipline.
-
----
-
-# ✅ Solution
-
-**TrackMyCash** provides:
-- 🔒 Offline-first local storage using Hive
-- ⚡ Fast and lightweight performance
-- 📊 Beautiful financial analytics
-- 📅 Daily workflow management
-- 🌙 Dark mode support
-- 📈 Monthly reports and trends
-- 🗑️ Quick swipe-to-delete entries
-- 📱 Modern Material 3 UI
-
-All data stays safely on the user's device.
-
----
-
-# ✨ Features
-
-- 📱 Animated Splash Screen
-- 📊 Monthly Dashboard
-- ➕ Add Income Entries
-- ➖ Add Expense Entries
-- 📅 Daily Summary Tracking
-- 📈 Monthly Reports
-- 📉 Pie / Bar / Line Chart Analytics
-- 🗑️ Swipe to Delete
-- 🔒 Offline Local Storage
-- 🌙 Dark Theme Support
-
----
-
-# 🖼️ Screenshots
-
-<img width="720" height="1600" alt="WhatsApp Image 2026-05-09 at 11 20 08 AM (1)" src="https://github.com/user-attachments/assets/051ffe0f-3fe0-4672-b74d-682da952724d" />
-<img width="720" height="1600" alt="WhatsApp Image 2026-05-09 at 11 20 09 AM" src="https://github.com/user-attachments/assets/5263bea1-1e02-43ca-8c68-bf0d1a215a71" />
-<img width="720" height="1600" alt="WhatsApp Image 2026-05-09 at 11 20 09 AM (1)" src="https://github.com/user-attachments/assets/8b5a93f3-23eb-4d72-9a3a-67b107be9c36" />
-<img width="720" height="1600" alt="WhatsApp Image 2026-05-09 at 11 20 08 AM" src="https://github.com/user-attachments/assets/c37a1233-de4f-46c9-a023-9a227850ec48" />
-
-
-# 🛠️ Tech Stack
-
-| Technology | Usage |
-|------------|-------|
-| Flutter | App Framework |
-| Dart | Programming Language |
-| Hive | Local NoSQL Database |
-| Provider | State Management |
-| fl_chart | Charts & Analytics |
-| intl | Date & Currency Formatting |
-| uuid | Unique ID Generation |
-
----
-
-# 📁 Project Structure
-
-```bash
-lib/
-├── main.dart
-├── app.dart
-├── core/
-│   ├── constants/
-│   │   ├── app_colors.dart
-│   │   └── app_text_styles.dart
-│   ├── models/
-│   │   ├── income_entry.dart
-│   │   ├── income_entry.g.dart
-│   │   ├── expense_entry.dart
-│   │   └── expense_entry.g.dart
-│   ├── providers/
-│   │   └── budget_provider.dart
-│   └── services/
-│       └── hive_service.dart
->>>>>>> 8b8766ed0d499c7b110c4c446f0487ddac4fbe56
 ├── screens/
 │   ├── splash_screen.dart
 │   ├── dashboard_screen.dart
@@ -171,82 +126,41 @@ lib/
 │   ├── monthly_report_screen.dart
 │   └── analytics_screen.dart
 └── widgets/
-<<<<<<< HEAD
     ├── summary_card.dart         # Gradient stat card
     ├── entry_list_tile.dart      # Dismissible income/expense tile
     └── chart_card.dart           # Chart container with accent bar
-=======
-    ├── summary_card.dart
-    ├── entry_list_tile.dart
-    └── chart_card.dart
->>>>>>> 8b8766ed0d499c7b110c4c446f0487ddac4fbe56
 ```
 
 ---
 
-<<<<<<< HEAD
-## 🔧 Dependencies
+## 🚀 Getting Started
 
-| Package | Purpose |
-|---------|---------|
-| `hive` + `hive_flutter` | Local NoSQL database |
-| `fl_chart` | Pie, bar, line charts |
-| `provider` | State management |
-| `intl` | Currency / date formatting |
-| `uuid` | Unique entry IDs |
-
----
-
-## 📊 Key Features
-
-- ✅ **Daily workflow** — add multiple incomes/expenses, submit at end of day
-- ✅ **Monthly analytics** — total income, expenses, profit/loss, category breakdown
-- ✅ **3 chart types** — pie, bar, line (fl_chart)
-- ✅ **Swipe to delete** — dismissible entry tiles
-- ✅ **Dark mode** — system-aware with beautiful dark theme
-- ✅ **Monthly reset** — clear all data and start fresh
-- ✅ **Local persistence** — Hive NoSQL, no internet needed
-
----
-
-## 🎨 Design System
-
-- **Primary colour**: `#6C63FF` (indigo/violet)
-- **Income**: `#00D68F` (emerald green)
-- **Expense**: `#FF6B6B` (coral red)
-- **Balance**: `#FFB347` (amber)
-- Background: Deep dark `#0F0F1A` with layered surface cards
-
----
-
-*Built with Flutter 3.x · Dart 3.x · Material 3*
-=======
-# 🚀 Getting Started
-
-## Prerequisites
+### Prerequisites
 
 - Flutter SDK 3.x or higher
 - Android Studio / VS Code
 - Android Emulator or Physical Device
 
+> ⚠️ **Device Guard Note:** If Dart is blocked by your organization policy, open a **personal (non-managed) PowerShell** window, or use Android Studio's built-in terminal which runs under a different security context.
+
 ---
 
-# ⚙️ Installation
+## ⚙️ Installation
 
-## 1️⃣ Clone Repository
+### 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/track_my_cash.git
+git clone https://github.com/darsh4329/track_my_cash.git
 cd track_my_cash
 ```
 
-## 2️⃣ Install Dependencies
+### 2️⃣ Install Dependencies
 
 ```bash
 flutter pub get
 ```
 
-## 3️⃣ Run Application
+### 3️⃣ Run Application
 
 ```bash
 flutter run
@@ -254,55 +168,60 @@ flutter run
 
 ---
 
-# 📦 Build Release APK
+## 📦 Build Release APK
 
 ```bash
 flutter build apk --release
 ```
 
-APK Output Location:
+APK output location:
 
-```bash
+```
 build/app/outputs/flutter-apk/app-release.apk
 ```
 
 ---
 
-# 📊 Analytics
+## 🎨 Design System
 
-TrackMyCash includes:
-
-- 🥧 Pie Charts for category analysis
-- 📊 Bar Charts for daily expenses
-- 📉 Line Charts for monthly trends
-
-Powered using `fl_chart`.
-
----
-
-# 🌍 Localization
-
-The app automatically uses the device locale for:
-- Currency symbols
-- Date formatting
-- Number formatting
-
-Using the `intl` package.
+| Role | Color | Hex |
+|------|-------|-----|
+| Primary | Indigo / Violet | `#6C63FF` |
+| Income | Emerald Green | `#00D68F` |
+| Expense | Coral Red | `#FF6B6B` |
+| Balance | Amber | `#FFB347` |
+| Background | Deep Dark | `#0F0F1A` |
 
 ---
 
-# 🧠 Daily Workflow
+## 🧠 Daily Workflow
 
-1️⃣ Launch App  
-2️⃣ Add Income  
-3️⃣ Add Expenses  
-4️⃣ Review Daily Summary  
-5️⃣ Submit Day  
-6️⃣ Analyze Monthly Reports  
+1. Launch App
+2. Add Income entries
+3. Add Expense entries
+4. Review Daily Summary
+5. Submit Day
+6. Analyze Monthly Reports
 
 ---
 
-# 🔒 Privacy
+## 📊 Analytics
+
+TrackMyCash includes three chart types powered by `fl_chart`:
+
+- 🥧 **Pie Charts** — category-wise spending breakdown
+- 📊 **Bar Charts** — daily expense comparison
+- 📉 **Line Charts** — monthly income vs expense trends
+
+---
+
+## 🌍 Localization
+
+The app automatically uses the device locale for currency symbols, date formatting, and number formatting via the `intl` package.
+
+---
+
+## 🔒 Privacy
 
 - No account required
 - No cloud sync
@@ -311,7 +230,7 @@ Using the `intl` package.
 
 ---
 
-# 🧪 Testing
+## 🧪 Testing
 
 ```bash
 flutter test
@@ -319,11 +238,9 @@ flutter test
 
 ---
 
-# 🤝 Contributing
+## 🤝 Contributing
 
-Contributions are welcome.
-
-## Steps
+Contributions are welcome!
 
 ```bash
 git checkout -b feature-name
@@ -335,36 +252,34 @@ Then open a Pull Request.
 
 ---
 
-# 📄 License
+## 📄 License
 
 Distributed under the MIT License.
 
 ---
 
-# 🙏 Acknowledgements
+## 🙏 Acknowledgements
 
-- Flutter
-- Hive
-- fl_chart
-- Provider
+- [Flutter](https://flutter.dev)
+- [Hive](https://pub.dev/packages/hive)
+- [fl_chart](https://pub.dev/packages/fl_chart)
+- [Provider](https://pub.dev/packages/provider)
 - Dart Community
 
 ---
 
-# 📬 Contact
+## 📬 Contact
 
 **Darsh Parmar**
 
-GitHub: https://github.com/darsh4329
+GitHub: [https://github.com/darsh4329](https://github.com/darsh4329)
 
-Project Link:
-https://github.com/darsh4329/track_my_cash
+Project: [https://github.com/darsh4329/track_my_cash](https://github.com/darsh4329/track_my_cash)
 
 ---
 
-# ⭐ Support
+## ⭐ Support
 
-If you like this project, consider giving it a ⭐ on GitHub.
+If you like this project, consider giving it a ⭐ on GitHub!
 
 Built with ❤️ using Flutter & Dart.
->>>>>>> 8b8766ed0d499c7b110c4c446f0487ddac4fbe56
