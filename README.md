@@ -122,9 +122,11 @@ All data stays safely on the user's device.
 
 # 🖼️ Screenshots
 
-> Screenshots will be added after first release.
+<img width="720" height="1600" alt="WhatsApp Image 2026-05-09 at 11 20 08 AM (1)" src="https://github.com/user-attachments/assets/051ffe0f-3fe0-4672-b74d-682da952724d" />
+<img width="720" height="1600" alt="WhatsApp Image 2026-05-09 at 11 20 09 AM" src="https://github.com/user-attachments/assets/5263bea1-1e02-43ca-8c68-bf0d1a215a71" />
+<img width="720" height="1600" alt="WhatsApp Image 2026-05-09 at 11 20 09 AM (1)" src="https://github.com/user-attachments/assets/8b5a93f3-23eb-4d72-9a3a-67b107be9c36" />
+<img width="720" height="1600" alt="WhatsApp Image 2026-05-09 at 11 20 08 AM" src="https://github.com/user-attachments/assets/c37a1233-de4f-46c9-a023-9a227850ec48" />
 
---
 
 # 🛠️ Tech Stack
 
